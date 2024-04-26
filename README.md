@@ -142,7 +142,7 @@ vagrant up
 
 - **Flatcar Container Linux by Kinvolk**
 - **Debian** Bookworm, Bullseye, Buster
-- **Ubuntu** 20.04, 22.04
+- **Ubuntu** 20.04, 22.04, 24.04
 - **CentOS/RHEL** 7, [8, 9](docs/centos.md#centos-8)
 - **Fedora** 37, 38
 - **Fedora CoreOS** (see [fcos Note](docs/fcos.md))
