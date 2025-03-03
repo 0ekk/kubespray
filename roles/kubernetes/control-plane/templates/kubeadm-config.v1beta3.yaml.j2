@@ -455,3 +455,4 @@ featureGates:
   {{ feature | replace("=", ": ") }}
 {%   endfor %}
 {% endif %}
+resolvConf: "{{ kube_resolv_conf }}"

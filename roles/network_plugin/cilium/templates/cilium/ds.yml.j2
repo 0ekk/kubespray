@@ -98,9 +98,9 @@ spec:
           value: /var/lib/cilium/clustermesh/
 {% if (cilium_kube_proxy_replacement == 'strict') or (cilium_kube_proxy_replacement | bool) or (cilium_kube_proxy_replacement | string | lower == 'true') %}
         - name: KUBERNETES_SERVICE_HOST
-          value: "{{ kube_apiserver_global_endpoint | urlsplit('hostname') }}"
+          value: "{{  | urlsplit('hostname') }}"
         - name: KUBERNETES_SERVICE_PORT
-          value: "{{ kube_apiserver_global_endpoint | urlsplit('port') }}"
+          value: "{{  | urlsplit('port') }}"
 {% endif %}
 {% for env_var in cilium_agent_extra_env_vars %}
         - {{ env_var | to_nice_yaml(indent=2) | indent(10) }}
